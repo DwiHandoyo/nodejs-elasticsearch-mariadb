@@ -1,0 +1,32 @@
+{
+  "name": "nodejs-database",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon ./src/server.js",
+    "test": "mocha ./test/integration/articles-get.test.js",
+    "lint": "eslint ./"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@hapi/code": "^8.0.3",
+    "chai": "^4.3.4",
+    "eslint": "^7.27.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-plugin-import": "^2.23.3",
+    "jest": "^27.0.1",
+    "mocha": "^8.4.0",
+    "nodemon": "^2.0.7",
+    "supertest": "^6.1.3"
+  },
+  "dependencies": {
+    "@hapi/hapi": "^20.1.3",
+    "chai-http": "^4.3.0",
+    "elasticsearch": "^16.7.2",
+    "mariadb": "^2.5.3",
+    "nanoid": "^3.1.22"
+  }
+}
